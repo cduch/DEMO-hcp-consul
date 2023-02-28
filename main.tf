@@ -18,6 +18,6 @@ data "terraform_remote_state" "hvn" {
 
 resource "hcp_consul_cluster" "consulcluster" {
   cluster_id = "consul-cluster"
-  hvn_id     = data.terraform_remote_state.hvn.output.hvn_id
+  hvn_id     = data.terraform_remote_state.hvn.outputs.hvn_id
   tier       = var.tier
 }

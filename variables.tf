@@ -1,3 +1,8 @@
+variable "region" {
+  type    = string
+  default = "eu-central-1"
+}
+
 variable "hcp_client_id" {
   description = "The HCP Client ID"
   type        = string
@@ -10,17 +15,7 @@ variable "hcp_client_secret" {
   sensitive   = true
 }
 
-
-variable "tier" {
-  type = string
-  default = "standard"
-}
-
-variable "organization" {
-    type = string
-    default = "carstenduch"
-}
-variable "hvnworkspace" {
-  type = string
-  default = "HCP-HashiCorp_Virtual_Network-AWS_eu-central-1"
+variable "cluster_id" {
+  type    = string
+  default = "demo-consul"
 }

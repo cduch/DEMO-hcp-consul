@@ -36,7 +36,7 @@ output "consul_version" {
 }
 
 output "consul_datacenter" {
-  value = hcp_consul_cluster.main.consul_datacenter
+  value = hcp_consul_cluster.main.datacenter
 }
 
 output "consul_cluster_id" {

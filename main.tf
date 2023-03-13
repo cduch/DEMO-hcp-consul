@@ -45,7 +45,7 @@ output "consul_cluster_id" {
 
 output "consul_root_token" {
   value     = hcp_consul_cluster_root_token.token.secret_id
-#  sensitive = true
+  sensitive = true
 }
 
 output "consul_url" {

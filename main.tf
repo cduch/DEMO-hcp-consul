@@ -31,6 +31,14 @@ resource "hcp_consul_cluster_root_token" "token" {
 }
 
 
+output "consul_version" {
+  value = hcp_consul_cluster.main.consul_version
+}
+
+output "consul_datacenter" {
+  value = hcp_consul_cluster.main.consul_datacenter
+}
+
 output "consul_cluster_id" {
   value = hcp_consul_cluster.main.cluster_id
 }

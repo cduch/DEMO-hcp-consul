@@ -19,3 +19,14 @@ variable "cluster_id" {
   type    = string
   default = "demo-consul"
 }
+
+
+variable "organization" {
+  type = string
+  default = "carstenduch"
+}
+
+variable "hvnworkspace" {
+  type = string
+  default = "HCP_HVN"
+}
